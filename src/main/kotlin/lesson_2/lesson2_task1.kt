@@ -1,6 +1,9 @@
 package lesson_2
 
 fun main() {
-    val average = (3 + 4 + 3 + 5) / 4.0
+    val listOfAverageMarks = listOf(3, 4, 3, 5)
+    val numberOfStudents = 4
+    val average = listOfAverageMarks.sum().toFloat() / numberOfStudents
+
     println(average)
 }
