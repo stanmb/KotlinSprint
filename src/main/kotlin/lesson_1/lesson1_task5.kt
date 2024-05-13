@@ -2,10 +2,13 @@ package lesson_1
 
 fun main() {
     val secondsInSpace = 6480
-    val minutesInSpace = secondsInSpace / 60
-    val hoursInSpace = minutesInSpace / 60
-    val remainderOfSeconds = secondsInSpace % 60
-    val remainderOfMinutes = minutesInSpace % 60
+    val timeDivider = 60
+    val minutesInSpace = secondsInSpace / timeDivider
+    val hoursInSpace = minutesInSpace / timeDivider
+    val remainderOfSeconds = secondsInSpace % timeDivider
+    val remainderOfMinutes = minutesInSpace % timeDivider
 
-    print("0$hoursInSpace:$remainderOfMinutes:0$remainderOfSeconds")
+    print(String.format("0%d", hoursInSpace) + ":")
+    print("$remainderOfMinutes:")
+    print(String.format("0%d", remainderOfSeconds))
 }
