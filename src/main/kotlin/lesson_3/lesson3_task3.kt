@@ -3,7 +3,7 @@ package lesson_3
 fun main() {
     val multiplier = 6
     val resultedTable =
-        """
+    """
     $multiplier * 1 = ${multiplier * 1}
     $multiplier * 2 = ${multiplier * 2}
     $multiplier * 3 = ${multiplier * 3}
