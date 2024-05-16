@@ -1,4 +1,4 @@
-package lesson_3
+package lesson3
 
 fun main() {
     val username = "Andrey"
