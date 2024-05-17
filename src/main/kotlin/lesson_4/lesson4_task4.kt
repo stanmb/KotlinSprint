@@ -9,6 +9,5 @@ fun main() {
         Упражнения для ног:     ${if (isEven) "true" else "false"}
         Упражнения для спины:   ${if (isEven) "true" else "false"}
         Упражнения для пресса:  ${if (!isEven) "true" else "false"}
-
     """.trimIndent())
 }
