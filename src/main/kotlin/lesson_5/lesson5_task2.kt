@@ -5,7 +5,7 @@ import java.time.LocalDate
 const val AGE_OF_MAJORITY = 18
 
 fun main() {
-    val yearOfUsersBirth = readlnOrNull()!!.toInt()
+    val yearOfUsersBirth = readln().toInt()
     val currentYear = LocalDate.now().year
     val userAge = currentYear - yearOfUsersBirth
 
