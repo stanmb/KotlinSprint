@@ -5,9 +5,9 @@ fun main() {
     val isEven = dayOfTraining % 2 == 0
     println(
         """
-        Упражнения для рук:     ${if (!isEven) "true" else "false"}
-        Упражнения для ног:     ${if (isEven) "true" else "false"}
-        Упражнения для спины:   ${if (isEven) "true" else "false"}
-        Упражнения для пресса:  ${if (!isEven) "true" else "false"}
+        Упражнения для рук:     ${!isEven}
+        Упражнения для ног:     $isEven
+        Упражнения для спины:   $isEven
+        Упражнения для пресса:  ${!isEven}
     """.trimIndent())
 }
