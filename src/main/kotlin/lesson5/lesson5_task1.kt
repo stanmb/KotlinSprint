@@ -11,17 +11,11 @@ fun main() {
         numTwo = (0..10).random()
 
         println("Докажите что вы не робот. Введите результат выражения $numOne + $numTwo")
-        userResponse = readlnOrNull()
-
-        try {
-            if (userResponse?.toInt() == numOne + numTwo) {
-                isChallengePassed = true
-                println("Вы успешно справились с заданием!")
-            }
-            else println("Ответ неверный.")
+        userResponse = readln()
+        if (userResponse.toInt() == numOne + numTwo) {
+            isChallengePassed = true
+            println("Вы успешно справились с заданием!")
         }
-        catch (_:NumberFormatException) {
-            println("Введено не число, нужно ввести число.")
-        }
+        else println("Ответ неверный.")
     }
 }
