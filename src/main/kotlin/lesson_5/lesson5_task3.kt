@@ -12,14 +12,11 @@ fun main() {
     println("Введите второе число")
     val userNumTwo = readln().toInt()
 
-    if (userNumOne == NUM_ONE || userNumOne == NUM_TWO) {
-        oneMatch = true
-        if (userNumTwo == NUM_ONE || userNumTwo == NUM_TWO) {
-            twoMatches = true
-        }
-    }
-    val resultString = if (oneMatch && !twoMatches) "Вы выиграли утешительный приз!"
-    else if (twoMatches) "Поздравляем! Вы выиграли главный приз!"
+    if (userNumOne == NUM_ONE || userNumOne == NUM_TWO) oneMatch = true
+    if (userNumTwo == NUM_ONE || userNumTwo == NUM_TWO) twoMatches = true
+
+    val resultString = if (oneMatch && !twoMatches || !oneMatch && twoMatches) "Вы выиграли утешительный приз!"
+    else if (twoMatches && oneMatch) "Поздравляем! Вы выиграли главный приз!"
     else "Неудача!"
 
     println(resultString)
